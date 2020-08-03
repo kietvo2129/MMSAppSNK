@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+         
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="W0000000001"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:id="@+id/tv_fo_no"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_product_code"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="W0000000001"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_start_dt"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+         
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="W0000000001"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_end_dt"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+         
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="W0000000001"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_target_qty"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+         
+        android:gravity="right"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="W0000000001"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_sked_qty"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+         
+        android:gravity="right"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="W0000000001"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_po_no"
+        android:textColor="#fff"
+        android:layout_width="150dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+         
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/tv_line_no"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+         
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="200dp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:layout_height="match_parent"
+        android:gravity="left"
+         
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/tv_factory"
+        android:maxLines="1"
+        android:layout_width="120dp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:gravity="left"
+         
+        android:text="W0000000001" />
+
+</LinearLayout>

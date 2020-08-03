@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical"
+    tools:context=".Actual.LotCompositeActivity">
+
+
+    <LinearLayout
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boder_b_t"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:weightSum="9">
+
+        <TextView
+            android:id="@+id/actual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawableEnd="@drawable/ic_topdown"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="WO"
+            android:textColor="#94F5FA" />
+
+        <TextView
+            android:id="@+id/actual5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:drawableEnd="@drawable/ic_topdown"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Factory"
+            android:textAlignment="center"
+            android:textColor="#94F5FA" />
+
+        <TextView
+            android:id="@+id/actual6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Process"
+            android:textAlignment="center"
+            android:textColor="#94F5FA" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:weightSum="9">
+
+        <TextView
+            android:id="@+id/tvWO"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="3"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/tvRouting"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/tvProcess"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:background="#00000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boder_b_t"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/ic_topdown"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Date"
+            android:textColor="#94F5FA" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Product Code"
+            android:textColor="#94F5FA" />
+
+<!--        <TextView-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="0dp"-->
+<!--            android:text="Estimate Group Qty"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#94F5FA" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="3"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="0dp"-->
+<!--            android:text="QR Qty"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#94F5FA" />-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/t4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/boder_botton"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingVertical="8dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:backgroundTint="#fff" />
+        <TextView
+            android:id="@+id/tvproductCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:backgroundTint="#fff" />
+
+<!--        <EditText-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/GroupQty"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:backgroundTint="#fff"-->
+<!--            android:imeOptions="actionDone"-->
+<!--            android:gravity="center"-->
+<!--            android:inputType="number"-->
+<!--            android:textColor="#fff" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/QRQty"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="3"-->
+<!--            android:backgroundTint="#fff"-->
+<!--            android:gravity="center"-->
+<!--            android:inputType="number"-->
+<!--            android:textColor="#fff" />-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/t5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t4"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/aaa"
+            android:layout_centerVertical="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:paddingEnd="4dp"
+            android:text="Lot Code"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_lotCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/aaa"
+            android:background="#E2E2E2"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:hint="Lot code"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:paddingLeft="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/t6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t5"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/azaz"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:paddingEnd="4dp"
+            android:text="Buyer QR"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_bobbinCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/btn_scan_BobbinCode"
+            android:layout_toEndOf="@+id/azaz"
+            android:background="#E2E2E2"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:hint="Buyer QR"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/btn_scan_BobbinCode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="4dp"
+            android:src="@drawable/qricon"
+            android:tint="#fff" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/t7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t6"
+        android:layout_marginHorizontal="4dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/buttonCreating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/lab"
+            android:textStyle="bold"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:text="Creating\nLot Code"
+            android:layout_margin="8dp"
+            android:elevation="4dp"
+
+            android:textColor="#fff" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/buttonMapping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lab"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:text="Mapping\nBuyer QR"
+            android:layout_margin="8dp"
+            android:textColor="#fff" />
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/buttonPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lab"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:elevation="4dp"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:text="Printing\nLot Code"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/t7"
+        android:layout_marginHorizontal="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/kkk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boder_b_t"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableEnd="@drawable/ic_topdown"
+                    android:text="Material"
+                    android:textColor="#94F5FA" />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableEnd="@drawable/ic_topdown"
+                    android:text="QC"
+                    android:textColor="#94F5FA" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_topdown"
+                    android:gravity="center"
+                    android:text="PL No"
+                    android:textColor="#94F5FA" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="154dp"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_topdown"
+                    android:gravity="center"
+                    android:text="Bobbin"
+                    android:textColor="#94F5FA" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Qty"
+                    android:textColor="#94F5FA" />
+<!--                <TextView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Delete"-->
+<!--                    android:textColor="#94F5FA" />-->
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvDanhSanhproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kkk"
+                android:layout_marginTop="5dp"
+                android:listSelector="#4a94F5FA"
+                tools:listitem="@layout/item_product" />
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

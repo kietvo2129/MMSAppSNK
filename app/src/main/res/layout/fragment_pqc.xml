@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/labelMpo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/l_spinner_mpo"
+            android:layout_alignBottom="@+id/l_spinner_mpo"
+            android:gravity="center"
+            android:text="WO No:"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/l_spinner_mpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@+id/labelMpo"
+            android:background="@drawable/boder_botton"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_mpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:padding="8dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelMtno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/l_spinner_mtno"
+            android:layout_alignBottom="@+id/l_spinner_mtno"
+            android:gravity="center"
+            android:text="Process:"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/l_spinner_mtno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_spinner_mpo"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@+id/labelMtno"
+            android:background="@drawable/boder_botton"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_mtno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:padding="2dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/labelDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/l_spinner_date"
+            android:layout_alignBottom="@+id/l_spinner_date"
+            android:gravity="center"
+            android:text="Date:"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/l_spinner_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l_spinner_mtno"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@+id/labelMtno"
+            android:background="@drawable/boder_botton"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:padding="2dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/l_spinner_receiving_date"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/l_spinner_mtno"-->
+<!--            android:layout_margin="8dp"-->
+<!--            android:layout_toEndOf="@+id/labelReceivingDate"-->
+<!--            android:background="@drawable/boder_botton"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/spinner_receiving_date"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/white" />-->
+<!--        </LinearLayout>-->
+
+    </RelativeLayout>
+    <!-- List View -->
+    <RelativeLayout
+
+        android:id="@+id/relativeLayoutbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutHeader"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/boder_b_t">
+
+        <LinearLayout
+            android:id="@+id/row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_b_t"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:text="Target Qty"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:text="Actual"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Defective"
+                android:textColor="@color/colorHeaderListView" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/relativeLayoutbody1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutbody"
+        android:layout_marginHorizontal="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tvTargetQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:id="@+id/tvActual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:id="@+id/tvDefective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorHeaderListView" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/relativeLayoutbody2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder_b_t"
+        android:layout_below="@+id/relativeLayoutbody1"
+        android:layout_marginHorizontal="8dp">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:text="QC Code"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:text="Check Qty"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Oke Qty"
+                android:textColor="@color/colorHeaderListView" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/relativeLayoutbody3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutbody2"
+        android:layout_marginHorizontal="8dp"
+        android:background="@drawable/boder_b">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_b"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_QCCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:id="@+id/tvCheckQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:id="@+id/tvOkeQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorHeaderListView" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/relativeLayoutbody3">-->
+<!--        <android.support.v7.widget.RecyclerView-->
+<!--            android:id="@+id/recyclerViewSubject"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="4dp"-->
+<!--            tools:listitem="@layout/item_pqc_listview" />-->
+<!--    </RelativeLayout>-->
+    <TextView
+        android:layout_margin="8dp"
+        android:id="@+id/H5"
+        android:layout_below="@+id/relativeLayoutbody3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="QC Main"/>
+    <RelativeLayout
+        android:padding="4dp"
+        android:layout_below="@+id/H5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/ins_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boder_b_t"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_topdown"
+                        android:maxLines="1"
+                        android:gravity="center"
+                        android:text="MQ No"
+                        android:textColor="@color/colorHeaderListView" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Work Date"
+                        android:textColor="@color/colorHeaderListView" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Check Qty"
+                        android:textColor="@color/colorHeaderListView" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Ok Qty"
+                        android:textColor="@color/colorHeaderListView" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="Defect Qty"
+                        android:textColor="@color/colorHeaderListView" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/recycler_view_qc_check"
+                    android:layout_width="match_parent"
+                    android:listSelector="#4a94F5FA"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/item_recycler_view_qc_check" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

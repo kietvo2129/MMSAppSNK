@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/colorBackGround"
+    tools:context=".TotalInspection.TotalInspectionDetail.TotalInspectionDetailActivity">
+    <LinearLayout
+        android:id="@+id/H1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:text="WO:"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="3"
+            android:id="@+id/tv_WO"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:paddingLeft="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/H2"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/H1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:text="Product:"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="3"
+            android:id="@+id/tv_product"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:paddingLeft="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/H3"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visual"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="16dp"
+            android:id="@+id/btn_Visual"
+            android:background="@drawable/btn_background"
+            android:layout_alignParentEnd="true"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Thickness"
+            android:text="Thickness"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_background"
+            android:layout_toStartOf="@+id/btn_Visual"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/H3">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/aaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:background="@drawable/boder_b_t"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Status"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="PL NO"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Product Qty"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Group Qty"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Thickness Def Qty"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Visual Def Qty"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Total Def Qty"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Total Def Rate"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lvDanhSanh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/total_inspection_detail_data"
+                    android:layout_below="@+id/aaa"
+                    android:layout_marginHorizontal="4dp"
+                    android:listSelector="#4a94F5FA" />
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

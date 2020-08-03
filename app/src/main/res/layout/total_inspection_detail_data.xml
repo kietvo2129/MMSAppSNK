@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="W0000000001"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:id="@+id/tv_status"
+        android:onClick="finish_click"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="W0000000001"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:id="@+id/tv_PLNO"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="W0000000001"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_product_qty"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+         
+        android:gravity="right"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="W0000000001"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_group_qty"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+         android:background="@drawable/boder_b"
+        android:onClick="click_groupQty"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="W0000000001"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:id="@+id/tv_thinkness_def_qty"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="right"
+
+        android:text="W0000000001" />
+    <TextView
+        android:id="@+id/tv_visual_def_qty"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="right"
+
+        android:text="W0000000001" />
+
+
+    <TextView
+        android:id="@+id/tv_total_def_qty"
+        android:layout_width="120dp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:layout_height="match_parent"
+        android:gravity="right"
+         
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/tv_total_def_rate"
+        android:maxLines="1"
+        android:layout_width="120dp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:gravity="right"
+         
+        android:text="W0000000001" />
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="10000001"
+
+        android:padding="4dp"
+        android:id="@+id/tv_staff_no"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:gravity="left|center_vertical"
+        android:textColor="#fff"
+        android:text="10000001"
+
+        android:padding="10dp"
+        android:id="@+id/tv_staff_id"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_staff_name"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+
+        android:padding="10dp"
+        android:text="Nguyen van A"
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/tv_type_name"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+
+        android:padding="10dp"
+        android:text="Nguyen van A"
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+
+        android:padding="10dp"
+        android:text="Nguyen van A"
+        android:textColor="#fff" />
+    <TextView
+        android:id="@+id/tv_end_date"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="Nguyen van A"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

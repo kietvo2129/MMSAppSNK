@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="280dp">
+    <!--    337-->
+
+    <ja.burhanrashid52.photoeditor.PhotoEditorView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:scaleType="centerCrop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Stock Lot No"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="xxxxxx"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Material Name"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="xxxxxx"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Material No"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="xxxxxx"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Qty"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="xxxxxx"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="6">
+
+                <TextView
+                    android:id="@+id/tv_WO"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:text="WO: 000000101"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_qr"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_mtcode"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-20dp"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="mt code"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/H1"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:background="#000"-->
+        <!--            android:text="3 Times as good as new, \n if you peel off a layer."-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textColor="#fff"-->
+        <!--            android:gravity="center"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:padding="5dp"-->
+        <!--            android:layout_height="wrap_content">-->
+        <!--        </TextView>-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_below="@+id/H1"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:weightSum="10"-->
+        <!--            android:layout_height="match_parent">-->
+        <!--            <LinearLayout-->
+        <!--                android:layout_weight="6"-->
+        <!--                android:orientation="vertical"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent">-->
+        <!--                <TextView-->
+        <!--                    android:layout_marginTop="10dp"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:text="AUTONSI"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    android:textSize="20dp"-->
+        <!--                    android:gravity="center_horizontal"-->
+        <!--                    android:layout_height="wrap_content"/>-->
+        <!--                <TextView-->
+        <!--                    android:layout_marginTop="20dp"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:text="PRINTER"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    android:textSize="30dp"-->
+        <!--                    android:gravity="center_horizontal"-->
+        <!--                    android:layout_height="wrap_content"/>-->
+        <!--                <TextView-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:text="BLACK PRINT"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    android:textSize="20dp"-->
+        <!--                    android:gravity="center_horizontal"-->
+        <!--                    android:layout_height="wrap_content"/>-->
+        <!--                <ImageView-->
+        <!--                    android:layout_marginTop="10dp"-->
+        <!--                    android:layout_gravity="center_horizontal"-->
+        <!--                    android:layout_width="84dp"-->
+        <!--                    android:background="@drawable/doremon"-->
+        <!--                    android:layout_height="101dp"/>-->
+        <!--            </LinearLayout>-->
+        <!--            <LinearLayout-->
+        <!--                android:layout_weight="4"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:orientation="vertical"-->
+        <!--                android:layout_marginLeft="10dp"-->
+        <!--                android:layout_height="match_parent">-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_marginTop="10dp"-->
+        <!--                    android:id="@+id/tv_WO"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    android:textSize="15dp"-->
+        <!--                    android:text="WO: 000000101"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"/>-->
+        <!--                <ImageView-->
+        <!--                    android:layout_gravity="center_horizontal"-->
+        <!--                    android:layout_marginTop="10dp"-->
+        <!--                    android:layout_width="168dp"-->
+        <!--                    android:layout_height="168dp"-->
+        <!--                    android:src="@mipmap/ic_launcher"-->
+        <!--                    android:id="@+id/img_qr"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_marginTop="-20dp"-->
+        <!--                    android:id="@+id/tv_mtcode"-->
+        <!--                    android:text="mt code"-->
+        <!--                    android:textStyle="bold"-->
+        <!--                    android:gravity="center"-->
+        <!--                    android:textSize="13dp"-->
+        <!--                    android:paddingBottom="20dp"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"/>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--        </LinearLayout>-->
+    </ja.burhanrashid52.photoeditor.PhotoEditorView>
+
+</RelativeLayout>

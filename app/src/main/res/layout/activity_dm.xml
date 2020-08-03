@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context=".DMActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context=".DMActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:gravity="center|bottom"
+        android:text="Smart MMS"
+        android:textColor="#fff"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/edtuser"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/vientrangdangnhap"
+        android:gravity="center"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/edtpass"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/vientrangdangnhap"
+        android:gravity="center"
+        android:hint="PW"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:buttonTint="#fff"
+        android:text="Remember password"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/btnsignup"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@drawable/vientrangnenxanhdangnhap"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textColor="#fff" />
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/logo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Autonsi"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp">
+
+    </TextView>
+</RelativeLayout>

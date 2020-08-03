@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    tools:context=".TotalInspection.TotalInspectionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewA1">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/aaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginHorizontal="4dp"
+                    android:background="@drawable/boder_b_t"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Status"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="WO"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Product"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Product Qty"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Group Qty"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Product CNT"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Check CNT"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Total Def Qty"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Total Def Rate"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Thickness Def Qty"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Visual Def Qty"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Start Date"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="End Date"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#94F5FA" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lvDanhSanh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/total_inspection_data"
+                    android:layout_below="@+id/aaa"
+                    android:layout_marginHorizontal="4dp"
+                    android:listSelector="#4a94F5FA" />
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

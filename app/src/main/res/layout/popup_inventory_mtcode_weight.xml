@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="290dp">
+
+
+    <ja.burhanrashid52.photoeditor.PhotoEditorView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:scaleType="centerCrop">
+
+        <TextView
+            android:id="@+id/H1"
+            android:layout_width="match_parent"
+            android:background="#3C3B3B"
+            android:text="3 Times as good as new, \n if you peel off a layer."
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:layout_below="@+id/H1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:text="AUTONSI"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:text="PRINTER"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="84dp"
+                    android:background="@drawable/doremon"
+                    android:layout_height="101dp"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_marginTop="-20dp"
+                    android:layout_width="168dp"
+                    android:layout_height="168dp"
+                    android:layout_below="@+id/tv_WO"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/img_qr"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_WO"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:text="WO: 000000101"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_mtcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_qr"
+                    android:layout_marginTop="-20dp"
+                    android:minEms="20"
+                    android:gravity="center"
+                    android:text="LOT-12045-ATL123599855541895524725178954700"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ja.burhanrashid52.photoeditor.PhotoEditorView>
+
+</RelativeLayout>

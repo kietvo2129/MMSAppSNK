@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header_p_1"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#282828">
+
+            <TextView
+                android:id="@+id/lbl_info_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_close_check_check"
+                android:text="Weight Scale"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_close_check_check"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_close" />
+
+            <Button
+                android:id="@+id/btn_check_save_ck"
+                android:background="#1BB68A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Apply"
+                android:textColor="@color/white"
+                android:textAllCaps="false" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/h2"
+            android:layout_below="@+id/header_p_1"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/broderw"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Standard"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="8"
+
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:paddingVertical="5dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Qty:"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/qty_standa"
+                    android:layout_weight="2"
+                    android:paddingVertical="5dp"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/broderw"
+                    android:text="0"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Weight(g):"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/weight_standa"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/broderw"
+                    android:text="0"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="8"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Qty:"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boder_b"
+                    android:text="1"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Weight(g):"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/weight1_standa"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boder_b"
+                    android:text="0"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginVertical="5dp"
+            android:layout_below="@+id/h2"
+            android:layout_width="match_parent"
+            android:background="@drawable/broderw"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="8"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Qty:"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/num_current"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boder_b"
+                    android:text="0"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Weight(g):"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/weight_current"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boder_b"
+                    android:text="0"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

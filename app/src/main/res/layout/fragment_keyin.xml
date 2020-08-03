@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#fff"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <android.support.constraint.ConstraintLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:id="@+id/tvActualCong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:paddingTop="10dp"
+                    android:textColor="#fff"
+                    android:text="Actual"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteX="65dp" />
+
+                <TextView
+                    android:id="@+id/tvActual"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/vientrangnenxanhdangnhap"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:padding="4dp"
+                    android:text="000"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvActualCong"
+                    app:layout_constraintEnd_toEndOf="@+id/tvActualCong"
+                    app:layout_constraintHorizontal_bias="0.522"
+                    app:layout_constraintStart_toStartOf="@+id/tvActualCong" />
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:layout_marginVertical="12dp"
+                android:layout_width="3dp"
+                android:background="#94F5FA"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/tvActualtru"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#fff"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+            <android.support.constraint.ConstraintLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvDefectiveCong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:textColor="#fff"
+                    android:text="Defective"
+                    android:textAlignment="center"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:enabled="false"
+                    android:id="@+id/tvDefective"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="36dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/vientrangnenxanhdangnhap"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:padding="4dp"
+                    android:text="000"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvDefectiveCong"
+                    app:layout_constraintEnd_toEndOf="@+id/tvDefectiveCong"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:layout_marginVertical="12dp"
+                android:layout_width="3dp"
+                android:background="#94F5FA"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:enabled="false"
+                android:layout_weight="2"
+                android:id="@+id/tvDefectiveTru"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="50dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#fff"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/serial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        />
+    <TextView
+        android:id="@+id/tvbientam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+</RelativeLayout>

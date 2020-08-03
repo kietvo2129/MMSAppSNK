@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="4dp"
+    android:id="@+id/lay_item">
+
+    <TextView
+        android:id="@+id/tv_mqno"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_topdown"
+        android:maxLines="1"
+        android:text="MQ No"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_word_date"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_topdown"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Work Date"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_check_qty"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_topdown"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Check Qty"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_ok_qty"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_topdown"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Ok Qty"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_defect_qty"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Defect Qty"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

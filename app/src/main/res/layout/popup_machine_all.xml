@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header_p_1"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#282828">
+
+            <TextView
+                android:id="@+id/lbl_info_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/img_close_check_check"
+                android:text="Machine list"
+
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_close_check_check"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_close" />
+
+            <Button
+                android:id="@+id/btn_addStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="168dp"
+                android:background="@drawable/customadd_button"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/header_p_1"
+            android:id="@+id/HD"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+<!--            <EditText-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/search_id"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="10dp"-->
+<!--                android:background="@drawable/boder_top_button"-->
+<!--                android:hint="Search Staff ID"-->
+<!--                android:textSize="14dp"-->
+<!--                android:imeOptions="actionSearch"-->
+<!--                android:drawableLeft="@drawable/ic_search_white"-->
+<!--                android:inputType="text"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textColorHint="#B6B1B1" />-->
+            <EditText
+                android:id="@+id/search_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/boder_top_button"
+                android:drawableLeft="@drawable/ic_search_white"
+                android:hint="Search Code"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColor="#fff"
+                android:textColorHint="#B6B1B1"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:id="@+id/H2"
+            android:layout_marginHorizontal="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HD">
+
+            <TextView
+
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_topdown"
+                android:gravity="center"
+                android:text="Type"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_topdown"
+                android:gravity="center"
+                android:text="Code"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvMCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/H2"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginTop="1dp"
+            android:listSelector="#4a94F5FA"
+            tools:listitem="@layout/item_staff_working" />
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

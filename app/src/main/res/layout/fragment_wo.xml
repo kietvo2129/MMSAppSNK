@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    tools:context=".MainLayout">
+
+    <RelativeLayout
+        android:id="@+id/viewA1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:id="@+id/ln_a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <TextView
+                android:id="@+id/lbl_from"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_weight="3"
+                android:background="@drawable/lab"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:text="From"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/edittextStartdate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/boder_top_button"
+                android:gravity="center"
+                android:hint="YYYY-MM-DD"
+                android:inputType="date"
+                android:paddingHorizontal="5dp"
+                android:textColor="#fff"
+                android:textColorHint="#CAC9C9" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="4dp"
+                android:paddingVertical="6dp"
+                android:layout_weight="3"
+                android:background="@drawable/lab"
+                android:gravity="center"
+                android:paddingHorizontal="15dp"
+                android:text="To"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/edittextEnddate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/boder_top_button"
+                android:gravity="center"
+                android:hint="YYYY-MM-DD"
+                android:inputType="date"
+                android:paddingHorizontal="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#ffffff"
+                android:textColorHint="#CAC9C9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_a2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln_a1"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="6"
+                android:paddingVertical="6dp"
+                android:background="@drawable/lab"
+                android:gravity="center"
+
+                android:shadowColor="#aaa"
+                android:text="WO No"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/boder_top_button">
+
+                <Spinner
+                    android:id="@+id/edittextWono"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#fff"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_a3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln_a2"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="6"
+                android:background="@drawable/lab"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:text="PO No"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/boder_top_button">
+
+                <Spinner
+                    android:id="@+id/edittextPono"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#fff"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ln_a3"
+            android:layout_marginTop="8dp"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/buttonSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lab"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="32dp"
+                android:text="Search"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewA1">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:background="@drawable/boder_b_t"
+                    android:id="@+id/aaa"
+                    android:layout_marginHorizontal="4dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:gravity="center"
+                        android:text="WO No"
+                        android:textColor="#94F5FA"
+                        android:drawableRight="@drawable/ic_topdown"/>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Product Code"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Start Date"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="End Date"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Target"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Schedule"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="PO No"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Routing No"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:drawableRight="@drawable/ic_topdown"
+                        android:gravity="center"
+                        android:text="Product Name"
+                        android:textColor="#94F5FA" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:gravity="center"
+                        android:text="Factory"
+                        android:textColor="#94F5FA" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:layout_marginHorizontal="4dp"
+                    android:id="@+id/lvDanhSanh"
+                    android:listSelector="#4a94F5FA"
+                    tools:listitem="@layout/work_order_master_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aaa" />
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

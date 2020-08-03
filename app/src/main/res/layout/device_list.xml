@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#008577"
+    >
+	<TextView
+		android:id="@+id/HH1"
+		android:layout_width="fill_parent"
+		android:text="Please select a device to:"
+		android:paddingVertical="10dp"
+		android:textColor="#fff"
+		android:layout_marginLeft="10dp"
+		android:layout_height="wrap_content"></TextView>
+
+	<ListView
+		android:id="@+id/paired_devices"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/HH1"
+		android:layout_marginBottom="50dip"
+		android:stackFromBottom="true" />
+
+	<Button android:id="@+id/button_scan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_scan"
+    />
+</RelativeLayout>

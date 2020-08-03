@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    <item android:id="@+id/CompositeLot"-->
+<!--        android:iconTint="#fff"-->
+<!--        app:showAsAction="always"-->
+<!--        android:title="LOT"-->
+<!--        android:icon="@drawable/ic_print"-->
+<!--        />-->
+    <item
+        android:id="@+id/mold_id"
+        android:title="Mold"
+        android:icon="@drawable/ic_mold"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/machine_id"
+        android:title="Machine"
+        android:icon="@drawable/ic_machine"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/Staff_id"
+        android:title="Staff"
+        android:icon="@drawable/ic_staff"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/CompositeLottext"
+        android:title="LOT"
+        app:showAsAction="always"
+        />
+
+
+</menu>

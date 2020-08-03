@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:orientation="horizontal">
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/ck_detail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:buttonTint="@color/white"/>-->
+    
+    <TextView
+        android:id="@+id/tv_popup_detail_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="MQ No"
+        android:textColor="@color/white"
+        android:paddingVertical="8dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_popup_detail_valume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="MQ No"
+        android:textColor="@color/white"
+        android:paddingVertical="8dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/edt_popup_detail_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text=""
+        android:hint="Qty"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:inputType="number"
+        android:imeOptions="actionGo"
+        android:paddingVertical="8dp"
+        android:gravity="center"/>
+
+
+</LinearLayout>

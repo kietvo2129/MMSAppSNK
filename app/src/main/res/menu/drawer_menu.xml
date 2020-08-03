@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/notice"
+            android:title="Notice">
+        </item>
+        <item
+            android:id="@+id/nav_wo"
+            android:icon="@drawable/wo"
+            android:title="WO List" />
+        <item
+            android:id="@+id/nav_actual"
+            android:icon="@drawable/actual"
+            android:title="Actual" />
+        <item
+            android:id="@+id/nav_pqc"
+            android:icon="@drawable/actual"
+            android:title="PQC" />
+        <item
+            android:id="@+id/nav_oqc"
+            android:icon="@drawable/actual"
+            android:title="OQC" />
+<!--        <item-->
+<!--            android:id="@+id/nav_Composite"-->
+<!--            android:icon="@drawable/ic_product"-->
+<!--            android:title="Lot Composite">-->
+<!--        </item>-->
+<!--        <item-->
+<!--            android:id="@+id/nav_product"-->
+<!--            android:icon="@drawable/ic_product"-->
+<!--            android:title="Lot Product" />-->
+<!--        <item-->
+<!--            android:id="@+id/xulydulieu"-->
+<!--            android:icon="@drawable/ic_share"-->
+<!--            android:title="Weigh scales" />-->
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_white_24dp"
+                android:title="Logout" />
+        </menu>
+
+
+    </item>
+
+</menu>

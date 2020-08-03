@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="W0000000001"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:id="@+id/m_process"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/m_material"
+        android:textColor="#fff"
+        android:layout_width="200dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/m_width"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/m_needQty"
+        android:layout_width="90dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/m_feeding"
+        android:layout_width="80dp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/m_unit"
+        android:textColor="#fff"
+        android:layout_width="80dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/m_division"
+        android:textColor="#fff"
+        android:layout_width="80dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="W0000000001" />
+
+</LinearLayout>

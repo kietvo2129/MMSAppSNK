@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorpart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#282828"
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lbl_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/img_close"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:text="Detail"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFF" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart= "true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <Button
+            android:id="@+id/buttonSaveCheckDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:paddingVertical="16dp"
+            android:text="Save" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/h2"
+        android:layout_below="@+id/h1"
+        android:paddingBottom="16dp"
+        android:paddingHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:id="@+id/lx1"
+            android:paddingVertical="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/boder_b_t"
+            android:orientation="horizontal"
+            android:weightSum="3">
+<!--            <CheckBox-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:buttonTint="@color/colorpart"-->
+<!--                />-->
+            <TextView
+                android:id="@+id/tv_stt_check0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:text="Subject"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:id="@+id/tv_qty_check0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Valume"
+                android:textColor="@color/colorHeaderListView"
+                android:drawableEnd="@drawable/ic_topdown"/>
+
+            <TextView
+                android:id="@+id/tv_contents_check0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Qty"
+                android:textColor="@color/colorHeaderListView" />
+
+        </LinearLayout>
+
+        <ListView
+            tools:listitem="@layout/item_popup_inspection_detail"
+            android:id="@+id/list_view_check_detail"
+            android:layout_below="@+id/lx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorItemGrey">#e4e4e4</color>
+    <color name="colorVeryLightBlue">#55a0a7cc</color>
+    <color name="colorLightBlue">#ffa0a7cc</color>
+    <color name="log_bg">#e5e5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="on_pressed">#30bfbfbf</color>
+    <color name="secondary_text">#727272</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="color_888888">#888888</color>
+    <color name="color_20ffffff">#20ffffff</color>
+
+
+    <color name="colorPrimary">#282828</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBackGround">#116675</color>
+    <color name="colorpart">#1c97ad</color>
+
+
+
+
+    <color name="background">#181a26</color>
+    <color name="text">#ff1b1b</color>
+    <color name="text2">#222222</color>
+    <color name="line">#19ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="white1">#33ffffff</color>
+    <color name="gray">#7fffffff</color>
+    <color name="gray1">#dedede</color>
+    <color name="black">#000000</color>
+    <color name="black1">#66000000</color>
+
+
+    <color name="colorHeaderListView">#94F5FA</color>
+
+    <color name="colorRecieveText">#00FF00</color>
+    <color name="colorSendText">#82CAFF</color>
+    <color name="colorStatusText">#FFDB58</color>
+
+</resources>

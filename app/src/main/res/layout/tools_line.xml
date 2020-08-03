@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="left"
+        android:textColor="#fff"
+        android:text="W0000000001"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:id="@+id/t_process"
+
+        android:layout_width="100dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/t_machinetype"
+        android:textColor="#fff"
+        android:layout_width="120dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/t_machinecode"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/t_startdate"
+        android:layout_width="120dp"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="W0000000001" />
+
+    <TextView
+        android:id="@+id/t_enddate"
+        android:layout_width="120dp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="W0000000001" />
+
+</LinearLayout>

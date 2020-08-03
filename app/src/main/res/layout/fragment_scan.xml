@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#fff"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+                <android.support.constraint.ConstraintLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvActualCong"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Actual"
+
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/tvActual"
+                        android:layout_width="match_parent"
+                        android:layout_marginHorizontal="36dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/vientrangnenxanhdangnhap"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:padding="4dp"
+                        android:text="000"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/tvActualCong"
+                        app:layout_constraintHorizontal_bias="0.531"
+                        app:layout_constraintStart_toStartOf="@+id/tvActualCong" />
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/scanactive"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/boder_top_button"
+                        android:textColor="#fff"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:nextFocusDown="@id/scanactive"
+                        android:inputType="text"
+                        android:imeOptions="actionSend"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageViewActual"
+                        android:layout_width="46dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/scanactive"
+                        app:layout_constraintEnd_toEndOf="@+id/scanactive"
+                        app:layout_constraintTop_toTopOf="@+id/scanactive"
+                        app:srcCompat="@drawable/iconbacode" />
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginVertical="12dp"
+                android:layout_width="3dp"
+                android:background="#94F5FA"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:id="@+id/tvActualtru"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:gravity="center"
+                android:text="-"
+                android:textColor="#fff"
+                android:textSize="50dp"
+                app:layout_constraintStart_toEndOf="@+id/tvActualCong"
+                app:layout_constraintTop_toTopOf="@+id/tvActualCong" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#fff"/>
+        <LinearLayout
+            android:layout_weight="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvDefectiveCong"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#fff"
+                        android:text="Defective"
+                        android:textAlignment="center"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/tvDefective"
+                        android:layout_width="match_parent"
+                        android:layout_marginHorizontal="36dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/vientrangnenxanhdangnhap"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:padding="4dp"
+                        android:text="000"
+                        android:textSize="30dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvDefectiveCong"
+                        app:layout_constraintEnd_toEndOf="@+id/tvDefectiveCong"
+                        app:layout_constraintStart_toStartOf="@+id/tvDefectiveCong" />
+                </android.support.constraint.ConstraintLayout>
+                <android.support.constraint.ConstraintLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/bienkiemtra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#00FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="@+id/scandefective"
+                        app:layout_constraintEnd_toEndOf="@+id/scandefective" />
+
+                    <EditText
+                        android:id="@+id/scandefective"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#fff"
+                        android:paddingLeft="10dp"
+                        android:nextFocusDown="@id/scandefective"
+                        android:imeOptions="actionSend"
+                        android:background="@drawable/boder_top_button"
+                        android:inputType="text"
+                        android:gravity="center_vertical"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/logoscan"
+                        android:layout_width="46dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/scandefective"
+                        app:layout_constraintEnd_toEndOf="@+id/scandefective"
+                        app:layout_constraintTop_toTopOf="@+id/scandefective"
+                        app:srcCompat="@drawable/iconbacode" />
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginVertical="12dp"
+                android:layout_width="3dp"
+                android:background="#94F5FA"
+                android:layout_height="match_parent"
+                />
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvDefectiveTru"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:textColor="#fff"
+                    android:text="-"
+                    android:gravity="center"
+                    android:textSize="50dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#fff"/>
+
+    </LinearLayout>
+</RelativeLayout>

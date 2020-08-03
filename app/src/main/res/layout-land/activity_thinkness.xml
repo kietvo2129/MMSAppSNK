@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:layout_weight="3"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/header_p_2"
+            android:layout_below="@+id/header_p_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="PL No"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/tv_qc_pl_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:padding="4dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Date"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/tv_qc_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint="yyyy-mm-dd"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Group Qty"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/tv_qc_group_qty"
+                        android:gravity="center"
+                        android:text="0"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:hint=""
+                        android:padding="4dp"
+
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="horizontal">-->
+
+            <!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;                android:orientation="horizontal">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_width="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_weight="2"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:padding="4dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text="Ok Qty"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:textColor="#ffffff" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:id="@+id/tv_qc_ok_qty"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_width="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_weight="3"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:hint=""&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text="0"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:padding="4dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:textColor="#ffffff" />&ndash;&gt;-->
+            <!--&lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_weight="3"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:padding="4dp"-->
+            <!--                    android:text="Check Qty"-->
+            <!--                    android:textColor="#ffffff" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_qc_Check_Qty"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:text="0"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="3"-->
+            <!--                    android:hint=""-->
+            <!--                    android:padding="4dp"-->
+            <!--                    android:textColor="#ffffff" />-->
+            <!--            </LinearLayout>-->
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:orientation="horizontal">-->
+            <!--            </LinearLayout>-->
+            <!--        </LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="#94F5FA"/>
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/ins_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boder_b_t"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_topdown"
+                            android:maxLines="1"
+                            android:gravity="center"
+                            android:text="Check Qty"
+                            android:textColor="@color/colorHeaderListView" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_topdown"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Pass Qty"
+                            android:textColor="@color/colorHeaderListView" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_topdown"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Defect Qty"
+                            android:textColor="@color/colorHeaderListView" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:text="Defect Rate"
+                            android:textColor="@color/colorHeaderListView" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_qc_check"
+                        android:layout_width="match_parent"
+                        android:listSelector="#4a94F5FA"
+                        android:layout_height="match_parent"
+                        tools:listitem="@layout/item_recycler_thinkness" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:minHeight="500dp"
+    android:minWidth="320dp"
+    android:layout_height="match_parent"
+    android:background="@color/colorpart">
+
+    <RelativeLayout
+        android:id="@+id/heder1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#282828">
+
+        <TextView
+            android:id="@+id/tv_subject_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/buttonSaveCheckDetail_qc"
+            android:layout_toEndOf="@+id/img_close_qc"
+            android:text="Subject"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/img_close_qc"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_close_black_24dp" />
+
+        <Button
+            android:id="@+id/buttonSaveCheckDetail_qc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:paddingVertical="16dp"
+            android:text="Save" />
+    </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/lx1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/heder1"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@drawable/boder_b_t"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:paddingVertical="8dp">-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/tv_stt_check0"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:drawableEnd="@drawable/ic_topdown"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text=""&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/colorHeaderListView" />&ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_qty_check0"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_toEndOf="@+id/tv_stt_check0"-->
+<!--            android:drawableEnd="@drawable/ic_topdown"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Qty"-->
+<!--            android:textColor="@color/colorHeaderListView" />-->
+
+<!--        <TextView-->
+<!--            android:layout_toEndOf="@+id/tv_qty_check0"-->
+<!--            android:id="@+id/tv_contents_check0"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Contents"-->
+<!--            android:textColor="@color/colorHeaderListView" />-->
+<!--        -->
+<!--    </LinearLayout>-->
+
+    <ListView
+        android:id="@+id/list_view_check_list_qc_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heder1"
+        tools:listitem="@layout/item_popup_inspection_list_qc_detail" />
+
+</RelativeLayout>

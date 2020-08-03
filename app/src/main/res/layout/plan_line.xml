@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="2019-07-08
+[13:05~18:68]"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:id="@+id/p_date"
+        android:layout_weight="1"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/p_process"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:layout_width="120dp"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:text="P007 - BED004" />
+
+    <TextView
+        android:id="@+id/p_prod_qty"
+        android:textColor="#fff"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:text="5,000" />
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorpart"
+    >
+
+    <RelativeLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#282828">
+
+        <TextView
+            android:id="@+id/lbl_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:text="Inspection"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFF" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_close_black_24dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingHorizontal="8dp"
+        android:id="@+id/h2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/h1">
+
+        <LinearLayout
+            android:id="@+id/lx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:background="@drawable/boder_b_t"
+            android:paddingVertical="8dp"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/tv_stt_check0"
+                android:layout_width="match_parent"
+                android:paddingStart="8dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center|left"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="MQ no"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:layout_weight="3"
+                android:id="@+id/tv_qty_check0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_topdown"
+                android:gravity="center"
+                android:text="Work Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorHeaderListView" />
+
+            <TextView
+                android:layout_weight="4"
+                android:id="@+id/tv_contents_check0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:paddingEnd="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="Qty"
+                android:textColor="@color/colorHeaderListView" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_marginTop="4dp"
+            android:id="@+id/list_view_check_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lx1"
+            android:layout_alignParentBottom="true"
+            tools:listitem="@layout/item_popup_inspection_view" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

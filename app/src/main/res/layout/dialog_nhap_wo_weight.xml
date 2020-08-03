@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="500dp"
+    android:orientation="vertical"
+    android:background="#282828"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/SaveDialogStandarData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lab"
+            android:layout_alignParentEnd="true"
+            android:paddingHorizontal="30dp"
+            android:textSize="36dp"
+            android:paddingVertical="5dp"
+            android:text="Save"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:text="Standard Amount (pcs)"
+            android:textSize="24dp"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingVertical="15dp"
+            android:background="@drawable/lab"
+            android:textColor="#fff"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:id="@+id/StandardAmount"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:backgroundTint="#fff"
+            android:textColor="#fff"
+            android:hint="xxx pcs"
+            android:inputType="number"
+            android:gravity="center"
+            android:textSize="32dp"
+            android:textColorHint="#969595"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:text="Standard Weight (kg)\n(except pallet weight)"
+            android:textSize="24dp"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:padding="15dp"
+            android:background="@drawable/lab"
+            android:textColor="#fff"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:id="@+id/StandardWeight"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:backgroundTint="#fff"
+            android:textColor="#fff"
+            android:hint="xxx kg"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="32dp"
+            android:textColorHint="#969595"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:text="Pallet Weight (kg)"
+            android:textSize="24dp"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:padding="15dp"
+            android:background="@drawable/lab"
+            android:textColor="#fff"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:id="@+id/PalletWeight"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:backgroundTint="#fff"
+            android:textColor="#fff"
+            android:hint="xxx kg"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:textSize="32dp"
+            android:textColorHint="#969595"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:text="Square per pcs  (cm2)"
+            android:textSize="24dp"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingVertical="15dp"
+            android:background="@drawable/lab"
+            android:textColor="#fff"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:id="@+id/Squareperpcs"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:backgroundTint="#fff"
+            android:inputType="numberDecimal"
+            android:textColor="#fff"
+            android:hint="xxx cm2"
+            android:gravity="center"
+            android:textSize="32dp"
+            android:textColorHint="#969595"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </EditText>
+
+    </LinearLayout>
+</LinearLayout>
